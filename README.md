@@ -1,5 +1,5 @@
 # TideTimes
 
-This is now completed. It will pull the data from, https://www.tideschart.com/United-States/California/San-Diego-County/Carlsbad/, and use this data to tweet the tide times for Carlsbad, CA.
+This is now completed. It will pull the data from, https://www.tideschart.com and use this data to tweet the tide times for beaches throughout california.
 
-@CA_TideTimes
+https://twitter.com/CA_TideTimes
