@@ -1,6 +1,7 @@
 from twython import Twython
 import time
 import sys
+import datetime
 
 sys.path.insert(0, 'C:/users/Drew/PycharmProjects/TideTimes2/')
 
@@ -29,7 +30,9 @@ beaches = webSite.beaches
 def post():
     while True:
         for i, (k, v) in enumerate(beaches.items()):
-            twitter.update_status(status=(v+k))
-            time.sleep(600)
+            now = datetime.datetime.now()
+            twitter.update_status(status = (v +k +"Current as of: " + str(now.strftime("%I:%M %m-%d-%y") + ". ")))
+            time.sleep(900)
+            #time.sleep(600)
 
 post()
